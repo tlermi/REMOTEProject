@@ -59,7 +59,6 @@
     <UnityVersion>2023.2.3f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\Tolunay\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.2\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.2.3f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.2.3f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.2.3f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -99,15 +98,15 @@
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Views\IncomingChanges\Developer\DirectoryConflicts\DrawDirectoryResolutionPanel.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\UI\StatusBar\NotificationBar.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Gluon\UpdateReport\UpdateReportListView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\UI\Progress\ProgressControlsForMigration.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Views\Locks\LocksViewMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\UI\Progress\ProgressControlsForMigration.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\QueryVisualElementsExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\UI\DrawActionToolbar.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Views\IncomingChanges\Gluon\ChangeCategoryTreeViewItem.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Help\HelpFormat.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Gluon\UpdateReport\UpdateReportListHeaderState.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\UI\EditorProgressBar.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\PlasticShutdown.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\UI\EditorProgressBar.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\AssetOverlays\Cache\BuildPathDictionary.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\WebApi\WebRestApiClient.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Views\DownloadPlasticExeWindow.cs" />
@@ -339,13 +338,13 @@
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Inspector\DrawInspectorOperations.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Developer\UpdateReport\UpdateReportDialog.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\UI\DockEditorWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Views\Changesets\ChangesetsSelection.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Views\Locks\LocksSelector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Views\Changesets\ChangesetsSelection.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\AssetsUtils\AssetsPath.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\UI\OverlayRect.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Views\Locks\LocksListViewItem.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\UI\UIElements\LoadingSpinner.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\UI\ShowWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Views\Locks\LocksListViewItem.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\Views\Welcome\DownloadAndInstallOperation.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\WebApi\TokenExchangeResponse.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.4.3\Editor\PlasticSCM\UI\Tree\TreeHeaderSettings.cs" />
@@ -845,6 +844,10 @@
     </Reference>
     <Reference Include="UnityEditor.WebGL.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.3f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.3f1\Editor\Data\PlaybackEngines\MacStandaloneSupport\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
